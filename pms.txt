@@ -1,0 +1,58 @@
+Patient Management System (PMS) - Setup Instructions
+====================================================
+
+Project Overview:
+-----------------
+This is a Patient Management System (PMS) prototype built with PHP, HTML, CSS, and MySQL.
+It allows:
+- Patient registration
+- Appointment booking
+- Attendance tracking
+- Patient support/queries
+
+Project Folder:
+---------------
+All project files are in the `pms/` folder:
+- index.php           → Login page
+- register_patient.php → Patient registration
+- dashboard.php       → Main dashboard
+- appointments.php    → Book/View appointments
+- attendance.php      → View attendance records
+- support.php         → Submit patient queries
+- treatments.php      → (Optional) Treatment recording
+- db.php              → Database connection
+- style.css           → CSS styling
+
+Database:
+---------
+1. Database name: `pms_db`
+2. SQL file: `pms_db.sql` (contains all tables and sample data)
+3. Tables:
+   - patients
+   - doctors
+   - appointments
+   - attendance
+   - treatments
+
+Setup Instructions:
+-------------------
+1. Install XAMPP (https://www.apachefriends.org/index.html) and start Apache and MySQL.
+2. Copy the `pms/` folder to your XAMPP web root:
+   - XAMPP: `C:\xampp\htdocs\pms`
+3. Open phpMyAdmin in your browser:
+   http://localhost/phpmyadmin
+4. Create a new database named `pms_db`.
+5. Import the `pms_db.sql` file into the database using the Import tab.
+6. Open your browser and go to:
+   http://localhost/pms/login.php
+
+Login Credentials:
+------------------
+- Prototype uses **email only** for login.
+- Example:
+  - Email: john@example.com
+  - (You can register new patients via register_patient.php)
+
+Notes:
+------
+- Ensure `db.php` has correct database credentials:
